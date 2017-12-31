@@ -1,0 +1,20 @@
+0.0.1
+	DataBaseQueryParam目前只支持单表操作；多表查询，请使用hql
+	尽量不要使用@ManyToOne，@OneToOne，@OneToMany来定义关联，大多数情况下，自己使用hql进行多表联联结
+新功能（8）：
+	1.保存：save，saveAll
+	2.单表查询：listByHQL，listByHQLToMap，listByHQLToList，getByHQL，getByHQLToMap，getByHQLToList
+	3.单表查询，指定视图：listByHQL，getByHQL
+	4.多表查询：listMultitableByHQL，listMultitableByHQLToMap，listMultitableByHQLToList，getMultitableByHQL，getMultitableByHQLToMap，getMultitableByHQLToList
+	5.单表计数：countByHQL
+	6.多表计数：countByHQL
+	7.添加SQLite方言：sqlite.SQLiteDialect
+	8.添加BaseSQLiteDao：专门针对SQLite进行操作
+	9.更新：update，updateAll
+	10.通过id获取对象：BaseDao.getById
+	11.保存或者更新：saveOrUpdate，saveOrUpdateAll
+优化（0）：
+修复BUG（1）：
+	1.SQLite：读操作也会引起并发异常：The database file is locked
+		解决方法：将锁改为读写锁
+其他改变（0）：

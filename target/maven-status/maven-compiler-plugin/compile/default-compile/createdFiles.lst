@@ -1,0 +1,9 @@
+com\gosun\hibernate\query\param\DataBaseQueryParam$FormatType.class
+com\gosun\hibernate\dao\BaseSQLiteDao.class
+com\gosun\hibernate\dao\BaseDao.class
+com\gosun\hibernate\query\param\DataBaseQueryParam$1.class
+com\gosun\hibernate\query\param\DataBaseQueryParam.class
+com\gosun\hibernate\query\param\MySQLQueryParam.class
+com\gosun\hibernate\query\param\PostgreSQLQueryParam.class
+com\gosun\hibernate\server\SessionFactorySingleton.class
+sqlite\SQLiteDialect.class

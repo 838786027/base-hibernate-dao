@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- DB连接四要素 -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://master:3306/basedao?useUnicode=true&amp;characterEncoding=utf8</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">123456</property>
+
+		<!-- 方言 -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+		<!--C3P0 数据源(数据库连接池) -->
+<!-- 		<property name="hibernate.connection.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property> -->
+
+		<!-- 当前Session上下文 -->
+		<property name="hibernate.current_session_context_class">thread</property>
+
+		<!-- 自动建表 -->
+<!-- 		<property name="hibernate.hbm2ddl.auto">update</property> -->
+
+		<!-- 显示SQL -->
+		<property name="hibernate.show_sql">false</property>
+
+		<!-- 格式化SQL -->
+		<property name="hibernate.format_sql">false</property>
+		
+		<mapping class="com.gosun.hibernate.DO.Table1DO" />
+		<mapping class="com.gosun.hibernate.DO.Table2DO" />
+	</session-factory>
+</hibernate-configuration>
